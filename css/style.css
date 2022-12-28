@@ -1,0 +1,222 @@
+body{
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #007200;
+    color: #ffffff;
+    margin: 1vh;
+    padding: 0;
+    border-radius: 1vh;
+    font-size: clamp(0.7em, 0.4em + 1vw, 1.5em);
+}
+
+
+/*Rodapé*/
+.baseboard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #43815b;
+    color: #ffffff;
+    height: 10vh;
+    margin: 1vh;
+    padding: 0;
+    border-radius: 1vh;
+    font-size: clamp(0.7em, 0.4em + 1vw, 1.5em);
+}
+
+/*Container Flex Box*/
+.flex-container{
+    display: flex;
+    background: linear-gradient(to right, #c7ffc7, #d1ffd1);
+    height: 100vh;
+    margin: 1vh;
+    padding: 0;
+    justify-content: space-between;
+    border-radius: 1vh;
+    width: 100%;
+}
+
+/*Formulário*/
+.forms{
+    display: flex;
+    background-color: #ffffff;
+    width: 170vh;
+    margin: 1vh;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1vh;
+    border: 0.3vh solid #002903;
+    justify-content: inherit;
+}
+
+/*Titulo do Form*/
+#form-title{
+    display: flex;
+    height: 6vh;
+    border-radius: 1vh 1vh 0 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-width: none;
+    background-color: #00410b;
+    color: white;
+}
+
+
+/*Itens do form*/
+.item-form{
+    padding: 0.7vw;
+    display: flex;
+    min-width: 8vh;
+    width: 96%;
+    background-color: #99ffc0;
+    margin: 2vh;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.2vh solid black;
+    border-radius: 0.7vh;
+}
+
+/*Textarea do form*/
+textarea {
+    box-sizing: border-box;
+    width: 100%
+}
+
+/*Botões do form*/
+.form-btn{
+    padding: 2vh;
+    max-width: 20vh;
+    border: none;
+    border-radius: 1vh;
+}
+
+
+#save-btn{
+    background-color: #35b435;
+    color: white;
+    margin: 1vh 0 0.7vh 0;
+}
+
+#cancel-btn{
+    background-color: red;
+    color: white;
+    margin: 1vh 0 0.7vh 0;
+}
+
+.date-input{
+    text-align: center;
+    width: 20vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    padding: 0.4vw;
+    margin: 1vh 0 0.7vh 0;
+    background-color: #007200;
+    color: white;
+    border-radius: 0.7vh;
+}
+
+.title-input{
+    width: 99%;
+    padding: 0.4vw;
+    min-width: 9vh;
+    margin: 1vh 0 0.7vh 0;
+    border-radius: 0.7vh;
+    border: 0.1vw solid black;
+}
+
+.textarea-desc{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin: 1vh 0 0.7vh 0;
+   border-radius: 0.7vh;
+   border: 0.1vw solid black;
+}
+
+
+/*Propriedades Especiais*/
+.row{
+    flex-direction: row;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+#uncisal-logo{
+    max-width: 7vw;
+    width: 7vh;
+    margin-right: 2vh;
+}
+
+/*Menu com itens (php)*/
+/*Stretch vai preencher a div independente do tamanho*/
+.left-menu{
+    margin: 1vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #9bffa8;
+    flex-shrink: 1;
+    flex-direction: column;
+    width: 39vh;
+    min-width: 12vh;
+    border-radius: 1vh;
+
+}
+
+/*Item dentro do menu*/
+
+/*
+Anotação
+Flex shrink deve ser usado em conjunto max-width/ min-width - max-height/ min-height
+*/
+.flex-item{
+    background-color: #0f6116;
+    color: #ffffff;
+    list-style: none;
+    display: flex;
+    padding: 1vh;
+    margin: 0.4vh;
+    border: 0.3vh solid #ffffff;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 1vh;
+    min-width: 10vh;
+    min-height: 1vh;
+    /*Rever este font size*/
+    font-size: clamp(0.7em, 0.4em + 1vw, 1.5em);
+}
+
+/*Titulo do menu de eventos*/
+#events-title{
+    background-color: #00410b;
+    color: rgb(255, 255, 255);
+}
+
+/* Flex Shrinnk */
+.fs-1{
+    flex-shrink: 1;
+}
+.fs-1{
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
+.fg-1{
+    flex-grow: 1;
+}
