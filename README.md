@@ -1,6 +1,6 @@
 # Projeto-php-webII
 
-## O projeto das disciplina de Programação WEB II deve seguir as seguintes regras:
+## O projeto da disciplina de Programação WEB II deve seguir as seguintes regras:
 
 #### 1- Possuir um menu no lado esquerdo com no mínimo 8 itens, utilizando um array em php
 
