@@ -56,11 +56,7 @@
                     <input type="button" value="SALVAR" class="form-btn" id="save-btn">
                     <input type="button" value="CANCELAR" class="form-btn" id="cancel-btn">
                 </div>
-
-
-
             </form>
-            
     </div>
 
     <footer class="baseboard">

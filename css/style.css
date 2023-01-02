@@ -1,8 +1,17 @@
 body{
+    display: flex;
     background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+@import url('https://css.gg/add.css');
+.gg-add{
+    margin-left: 3%;
+    min-width: 1%;
 }
 
 
@@ -14,7 +23,7 @@ body{
     justify-content: center;
     background-color: #007200;
     color: #ffffff;
-    margin: 1vh;
+    margin: 1vh 0.5vh 1vh 0.5vh;
     padding: 0;
     border-radius: 1vh;
     font-size: clamp(0.7em, 0.4em + 1vw, 1.5em);
@@ -27,10 +36,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #43815b;
+    background-color: #71977c;
     color: #ffffff;
     height: 10vh;
-    margin: 1vh;
+    margin: 1vh 0.5vh 1vh 0.5vh;
     padding: 0;
     border-radius: 1vh;
     font-size: clamp(0.7em, 0.4em + 1vw, 1.5em);
@@ -41,7 +50,7 @@ body{
     display: flex;
     background: linear-gradient(to right, #c7ffc7, #d1ffd1);
     height: 100vh;
-    margin: 1vh;
+    margin: 1vh 0.5vh 1vh 0.5vh;
     padding: 0;
     justify-content: space-between;
     border-radius: 1vh;
@@ -59,6 +68,7 @@ body{
     border-radius: 1vh;
     border: 0.3vh solid #002903;
     justify-content: inherit;
+    padding: 0;
 }
 
 /*Titulo do Form*/
@@ -83,7 +93,7 @@ body{
     display: flex;
     min-width: 8vh;
     width: 96%;
-    background-color: #99ffc0;
+    background-color: #caffcd;
     margin: 2vh;
     align-items: flex-start;
     justify-content: center;
@@ -104,6 +114,7 @@ textarea {
     max-width: 20vh;
     border: none;
     border-radius: 1vh;
+    
 }
 
 
@@ -111,12 +122,22 @@ textarea {
     background-color: #35b435;
     color: white;
     margin: 1vh 0 0.7vh 0;
+    cursor: pointer;
+}
+
+#save-btn:hover{
+    background-color: #298b29;
 }
 
 #cancel-btn{
-    background-color: red;
+    background-color: #ff0000;
     color: white;
     margin: 1vh 0 0.7vh 0;
+}
+
+#cancel-btn:hover{
+    background-color: #be0000;
+    transition: 200ms;
 }
 
 .date-input{
@@ -203,6 +224,11 @@ Flex shrink deve ser usado em conjunto max-width/ min-width - max-height/ min-he
     font-size: clamp(0.7em, 0.4em + 1vw, 1.5em);
 }
 
+.flex-item:hover{
+    transition: 250ms;
+    background-color: #002903;
+}
+
 /*Titulo do menu de eventos*/
 #events-title{
     background-color: #00410b;
@@ -219,4 +245,28 @@ Flex shrink deve ser usado em conjunto max-width/ min-width - max-height/ min-he
 }
 .fg-1{
     flex-grow: 1;
+}
+
+/*Barra de Rolagem*/
+
+
+
+::-webkit-scrollbar {
+    background-color: #beecc4;
+  }
+  
+   /*Altera a cor do botão de rolagem*/
+::-webkit-scrollbar-thumb {
+    background-color: #37a333;
+}
+  
+   /*Altera a largura da barra de rolagem*/
+::-webkit-scrollbar {
+    width: 8px;
+    
+}
+  
+   /*Altera a altura do botão de rolagem*/ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
 }
