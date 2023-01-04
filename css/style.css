@@ -14,6 +14,11 @@ body{
     min-width: 1%;
 }
 
+@import url('https://css.gg/folder.css');
+.gg-folder{
+    margin-left: 3%;
+    min-width: 1%;
+}
 
 .navbar{
     width: 100%;
@@ -28,7 +33,6 @@ body{
     border-radius: 1vh;
     font-size: clamp(0.7em, 0.4em + 1vw, 1.5em);
 }
-
 
 /*Rodapé*/
 .baseboard{
@@ -48,7 +52,7 @@ body{
 /*Container Flex Box*/
 .flex-container{
     display: flex;
-    background: linear-gradient(to right, #c7ffc7, #d1ffd1);
+    background: linear-gradient(to right, #6bfc6b, #017c01);
     height: 100vh;
     margin: 1vh 0.5vh 1vh 0.5vh;
     padding: 0;
@@ -67,14 +71,30 @@ body{
     flex-direction: column;
     border-radius: 1vh;
     border: 0.3vh solid #002903;
-    justify-content: inherit;
+    justify-content: space-between;
     padding: 0;
+}
+
+/*Itens do form*/
+.item-form{
+    font-weight: 400;
+    padding: 0.7vw;
+    display: flex;
+    min-width: 8vh;
+    width: 96%;
+    background-color: #85e778;
+    margin: 1vh;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 0.2vh solid black;
+    border-radius: 0.7vh;
 }
 
 /*Titulo do Form*/
 #form-title{
     display: flex;
-    height: 6vh;
+    height: 10vh;
     border-radius: 1vh 1vh 0 0;
     margin: 0;
     justify-content: center;
@@ -86,37 +106,28 @@ body{
     color: white;
 }
 
-
-/*Itens do form*/
-.item-form{
-    padding: 0.7vw;
-    display: flex;
-    min-width: 8vh;
-    width: 96%;
-    background-color: #caffcd;
-    margin: 2vh;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    border: 0.2vh solid black;
-    border-radius: 0.7vh;
-}
-
 /*Textarea do form*/
 textarea {
     box-sizing: border-box;
     width: 100%
 }
 
-/*Botões do form*/
+/*Conteudo do form*/
 .form-btn{
     padding: 2vh;
+    width: 100%;
     max-width: 20vh;
+    min-width: 3vh;
     border: none;
     border-radius: 1vh;
     
 }
 
+/*TESTAR RESPONSIVIDADE DOS BOTÕES*/
+#buttons-div{
+    justify-content: space-around;
+    align-items: center;
+}
 
 #save-btn{
     background-color: #35b435;
@@ -133,6 +144,7 @@ textarea {
     background-color: #ff0000;
     color: white;
     margin: 1vh 0 0.7vh 0;
+    cursor: pointer;
 }
 
 #cancel-btn:hover{
@@ -184,42 +196,35 @@ textarea {
     margin-right: 2vh;
 }
 
-/*Menu com itens (php)*/
-/*Stretch vai preencher a div independente do tamanho*/
+/*Menu com itens (sera usado array em PHP)*/
 .left-menu{
     margin: 1vh;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
-    background-color: #9bffa8;
-    flex-shrink: 1;
+    align-content: stretch;
+    background-color: #ffffff;
     flex-direction: column;
-    width: 39vh;
-    min-width: 12vh;
+    width: 45vh;
+    min-width: 13vh;
     border-radius: 1vh;
-
+    border: 1px solid rgb(255, 255, 255);
 }
 
-/*Item dentro do menu*/
-
-/*
-Anotação
-Flex shrink deve ser usado em conjunto max-width/ min-width - max-height/ min-height
-*/
+/*Item dentro do left-menu*/
 .flex-item{
     background-color: #0f6116;
     color: #ffffff;
     list-style: none;
     display: flex;
-    padding: 1vh;
     margin: 0.4vh;
     border: 0.3vh solid #ffffff;
     justify-content: center;
     text-align: center;
     align-items: center;
     border-radius: 1vh;
-    min-width: 10vh;
-    min-height: 1vh;
+    width: 94%;
+    flex-direction: row;
     /*Rever este font size*/
     font-size: clamp(0.7em, 0.4em + 1vw, 1.5em);
 }
@@ -231,8 +236,13 @@ Flex shrink deve ser usado em conjunto max-width/ min-width - max-height/ min-he
 
 /*Titulo do menu de eventos*/
 #events-title{
-    background-color: #00410b;
+    background-color: #002903;
     color: rgb(255, 255, 255);
+    height: 10vh;
+    width: 100%;
+    margin-top: 0;
+    border-radius: 1vh 1vh 0 0;
+    border: none;
 }
 
 /* Flex Shrinnk */
@@ -247,10 +257,7 @@ Flex shrink deve ser usado em conjunto max-width/ min-width - max-height/ min-he
     flex-grow: 1;
 }
 
-/*Barra de Rolagem*/
-
-
-
+/*Overflow Y*/
 ::-webkit-scrollbar {
     background-color: #beecc4;
   }
@@ -265,7 +272,6 @@ Flex shrink deve ser usado em conjunto max-width/ min-width - max-height/ min-he
     width: 8px;
     
 }
-  
    /*Altera a altura do botão de rolagem*/ 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
