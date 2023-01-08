@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     width: 100%;
     display: flex;
@@ -24,6 +28,7 @@ input{
 @import url('https://css.gg/folder.css');
 .gg-folder{
     margin-left: 3%;
+    margin-right: 3%;
     min-width: 1%;
 }
 
@@ -110,7 +115,7 @@ input{
     text-align: center;
     width: 100%;
     min-width: none;
-    background-color: #00410b;
+    background-color: #1e5827;
     color: white;
 }
 
@@ -132,7 +137,7 @@ input{
     
 }
 
-/*TESTAR RESPONSIVIDADE DOS BOTÕES*/
+/*Botões do formulário*/
 #buttons-div{
     align-items: center;
     background-color: transparent;
@@ -161,6 +166,7 @@ input{
     transition: 200ms;
 }
 
+/*Input/Forms*/
 .date-input{
     text-align: center;
     width: 20vh;
@@ -228,7 +234,6 @@ input{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    align-content: stretch;
     background-color: #ffffff;
     flex-direction: column;
     width: 45vh;
@@ -251,7 +256,6 @@ input{
     border-radius: 1vh;
     width: 94%;
     flex-direction: row;
-    /*Rever este font size*/
     font-size: clamp(0.7em, 0.4em + 1vw, 1.5em);
     cursor: pointer;
     
@@ -265,7 +269,7 @@ input{
 
 .flex-item:hover{
     transition: 250ms;
-    background-color: #002903;
+    background-color: #0d4911;
 }
 
 /*Titulo do menu de eventos*/
@@ -282,35 +286,27 @@ input{
 
 
 
-
 /* Flex Shrinnk */
-.fs-1{
-    flex-shrink: 1;
-}
 .fs-1{
     flex-shrink: 1;
     flex-basis: 100px;
 }
-.fg-1{
-    flex-grow: 1;
-}
+
 
 /*Overflow Y*/
 ::-webkit-scrollbar {
     background-color: #beecc4;
   }
   
-   /*Altera a cor do botão de rolagem*/
 ::-webkit-scrollbar-thumb {
     background-color: #37a333;
 }
   
-   /*Altera a largura da barra de rolagem*/
 ::-webkit-scrollbar {
     width: 8px;
     
 }
-   /*Altera a altura do botão de rolagem*/ 
+
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
